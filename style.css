@@ -62,16 +62,24 @@ body {
   border-radius: 100px;
 }
 
+
+
 .projetos {
-  display: flex;
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+ 
+}
+
+.projetos-programas{
+   display: flex;
   flex-direction: column;
   margin-top: 32px;
   padding:32px;
   background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
   box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
   border-radius: 20px;
-
- 
 }
 
 .projetos h2{
@@ -97,6 +105,33 @@ text-decoration: none;
 }
 
 
+.conquistas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom:auto;
+  padding: 8px 32px;
+  background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+}
+.conquistas ul {
+  color: #eeeee4;
+  list-style: none;
+  font-size: 26px;
+  font-weight: 700;
+  padding-left: 0;
+}
+.conquistas li {
+  list-style-type: none;
+}
+
+.conquistas img {
+  max-height: 100px;
+}
+
+
 .dark {
   background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
 }
@@ -116,4 +151,12 @@ text-decoration: none;
   background: #1C1C1C;
   color: #FFFFFF;
   border: 2px solid #f7f7f7
+}
+
+.dark .conquistas {
+  background-color: #eeeee4;
+}
+
+.dark .conquistas ul {
+  color: #123761;
 }
